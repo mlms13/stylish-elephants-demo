@@ -1,0 +1,12 @@
+{
+  "name": "elephants-demo",
+  "version": "1.0.0",
+  "description": "Stylish Elephants Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "elm-make Main.elm --warn --output=dist/index.html"
+  },
+  "author": "",
+  "license": "MIT"
+}
