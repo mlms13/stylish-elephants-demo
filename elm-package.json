@@ -4,7 +4,7 @@
     "repository": "https://github.com/mlms13/elephants-demo.git",
     "license": "MIT",
     "exposed-modules": [],
-    "source-directories": ["./"],
+    "source-directories": ["src"],
     "dependencies": {
         "elm-lang/core": "5.1.1 <= v < 6.0.0",
         "elm-lang/html": "2.0.0 <= v < 3.0.0",

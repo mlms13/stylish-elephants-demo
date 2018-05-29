@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "elm-make Main.elm --warn --output=dist/index.html"
+    "build": "elm-make ./src/Main.elm --warn --output=dist/index.html",
+    "dev": "elm-live ./src/Main.elm --output=dist/out.js --open"
   },
-  "author": "",
-  "license": "MIT"
+  "author": "mlms13",
+  "license": "MIT",
+  "devDependencies": {
+    "elm": "^0.18.0",
+    "elm-live": "^2.7.5"
+  }
 }
