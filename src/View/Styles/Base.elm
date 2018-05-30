@@ -1,7 +1,7 @@
 module View.Styles.Base exposing (..)
 
 import Color exposing (Color, rgb)
-import Element exposing (Attribute)
+import Element exposing (Attribute, Attr)
 import Element.Background as BG
 import Element.Font as Font
 
@@ -34,11 +34,11 @@ getColor c = case c of
   OffWhite -> rgb 244 248 249
   White -> rgb 254 254 254
 
-backgroundColor : ColorStyle -> Attribute msg
+backgroundColor : ColorStyle -> Attr d msg
 backgroundColor c =
   BG.color <| getColor c
 
-textColor : ColorStyle -> Attribute msg
+textColor : ColorStyle -> Attr d msg
 textColor c =
   Font.color <| getColor c
 
