@@ -14,9 +14,10 @@ type ColorStyle
   | BrandLight
   | Primary
   | PrimaryLight
-  | TextDark
-  | TextMed
-  | TextLight
+  | GrayDark
+  | GrayMed
+  | GrayLight
+  | GrayLightest
   | OffWhite
   | White
 
@@ -26,9 +27,10 @@ getColor c = case c of
   BrandLight -> rgb 240 238 252
   Primary -> rgb 39 169 248
   PrimaryLight -> rgb 221 239 249
-  TextDark -> rgb 38 50 56
-  TextMed -> rgb 144 164 174
-  TextLight -> rgb 199 209 213
+  GrayDark -> rgb 38 50 56
+  GrayMed -> rgb 120 144 156
+  GrayLight -> rgb 199 209 213
+  GrayLightest -> rgb 231 238 240
   OffWhite -> rgb 244 248 249
   White -> rgb 254 254 254
 
@@ -44,16 +46,24 @@ textColor c =
 -- Typography
 --------------------------------------------------------------------------------
 
-baseFontFamily : Attribute msg
-baseFontFamily =
+fontFamilyBase : Attribute msg
+fontFamilyBase =
   Font.family
     [ Font.typeface "Open Sans"
     , Font.sansSerif
     ]
 
-baseFontSize : Attribute msg
-baseFontSize =
+fontSizeBase : Attribute msg
+fontSizeBase =
   Font.size 16
+
+fontSizeXL : Attribute msg
+fontSizeXL =
+  Font.size 32
+
+fontSizeSm : Attribute msg
+fontSizeSm =
+  Font.size 13
 
 --------------------------------------------------------------------------------
 -- Reset
@@ -61,8 +71,8 @@ baseFontSize =
 
 reset : List (Attribute msg)
 reset =
-  [ baseFontFamily
-  , baseFontSize
+  [ fontFamilyBase
+  , fontSizeBase
   , backgroundColor White
-  , textColor TextDark
+  , textColor GrayDark
   ]
