@@ -1,6 +1,6 @@
 module View.Styles.Base exposing (..)
 
-import Color exposing (Color, rgb)
+import Color exposing (Color, rgba, rgb)
 import Element exposing (Attribute, Attr)
 import Element.Background as BG
 import Element.Font as Font
@@ -20,6 +20,7 @@ type ColorStyle
   | GrayLightest
   | OffWhite
   | White
+  | Transparent
 
 getColor : ColorStyle -> Color
 getColor c = case c of
@@ -33,6 +34,7 @@ getColor c = case c of
   GrayLightest -> rgb 231 238 240
   OffWhite -> rgb 244 248 249
   White -> rgb 254 254 254
+  Transparent -> rgba 0 0 0 0.0
 
 backgroundColor : ColorStyle -> Attr d msg
 backgroundColor c =

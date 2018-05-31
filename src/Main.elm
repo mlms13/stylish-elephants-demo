@@ -52,7 +52,7 @@ toolbar : Element msg
 toolbar =
   row [ height (px 70), paddingXY 20 0, backgroundColor White ]
     [ searchInput
-    , el [ width fill ] <| text "Icon"
+    , el [ width fill ] <| icon [ textColor Brand ] Grid
     , text "Controls"
     ]
 
