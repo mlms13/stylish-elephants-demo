@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "elm-make ./src/Main.elm --warn --output=dist/index.html",
+    "build": "elm-make ./src/Main.elm --warn --output=dist/out.js",
     "dev": "elm-live ./src/Main.elm --output=dist/out.js --open"
   },
   "author": "mlms13",
