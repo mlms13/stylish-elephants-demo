@@ -13,5 +13,13 @@
   "devDependencies": {
     "elm": "^0.18.0",
     "elm-live": "^2.7.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlms13/stylish-elephants-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mlms13/stylish-elephants-demo/issues"
+  },
+  "homepage": "https://github.com/mlms13/stylish-elephants-demo#readme"
 }
